@@ -1,0 +1,45 @@
+---
+
+debug: false
+
+# enable hardware control
+enable: true
+
+pwm_channels:
+  - channel: 0
+    name: Right Rear Leg
+    invert: true
+    low: 180
+    high: 610
+    initial_position: 0.1
+    idle_after_seconds: 10
+
+  - channel: 1
+    name: Right Front Leg
+    invert: false
+    low: 204
+    high: 620
+    initial_position: 0.6
+    idle_after_seconds: 10
+
+  - channel: 2
+    name: Left Rear Leg
+    invert: true
+    low: 260
+    high: 650
+    initial_position: 0.1
+    idle_after_seconds: 10
+
+  - channel: 3
+    name: Left Front Leg
+    invert: true
+    low: 150
+    high: 600
+    initial_position: 0.6
+    idle_after_seconds: 10
+
+shift_registers:
+  - channel: 0
+    clock_pin: 20
+    data_pin: 21
+    initial_state: [ ]
